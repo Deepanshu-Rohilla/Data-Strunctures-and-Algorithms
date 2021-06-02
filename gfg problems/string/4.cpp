@@ -1,3 +1,5 @@
+Recursively remove all adjacent duplicates
+https://practice.geeksforgeeks.org/problems/recursively-remove-all-adjacent-duplicates0744/1
 class Solution{
 public:
     string remove(string s){
