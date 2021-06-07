@@ -27,3 +27,24 @@ class Solution
         return ans;
     }
 };
+
+class Solution
+{
+    public:
+    //Function to rotate a linked list.
+    Node* rotate(Node* head, int k)
+    {
+        Node* temp = head;
+        while(temp->next!=NULL){
+            temp = temp->next;
+        }
+        temp->next = head;
+        while(k!=1){
+            head = head->next;
+            k--;
+        }
+        Node* ans = head->next;
+        head->next = NULL;
+        return ans;
+    }
+};
