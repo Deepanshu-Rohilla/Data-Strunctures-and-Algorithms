@@ -15,7 +15,7 @@ class Solution{
             if(m.find(sum)!=m.end()){
                 ans+=m[sum].size();
             }
-            m[sum].push_back(sum);
+            m[sum].push_back(i);
         }
         return ans;
     }
